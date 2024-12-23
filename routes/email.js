@@ -30,14 +30,14 @@ router.post("/contact", async (req, res) => {
 
     // Email options for the owner
     const mailOptionsOwner = {
-      from: "Calidia",
+      from: "enquiry@calidiafoods.ie",
       to: process.env.RECEIVER_EMAIL,
       subject: "New Message Through Contact Form",
       html: HTMLDataOwner,
     };
 
     const mailOptionsUser = {
-      from: "Calidia",
+      from: "support@calidiafoods.ie",
       to: email, // Send to the user's email
       subject: "Thank you for Contacting Us :)",
       html: HTMLDataUser,
